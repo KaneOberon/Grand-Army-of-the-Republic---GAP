@@ -142,14 +142,44 @@
     </div>
 </div>
 
-<!-- PAGE 5: SPECIAL FORCES -->
+<!-- PAGE 5: SPECIAL FORCES (now with images + Omega Squad added) -->
 <div id="page-5" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/arc.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">SPECIAL FORCES</h2>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-black/70 border border-red-500/40 p-8"><h3 class="text-red-400 text-2xl">ARC Troopers</h3><p class="text-sm mt-4">Fives, Echo, Colt — independent elites. Removed chips early and uncovered the conspiracy.</p></div>
-            <div class="bg-black/70 border border-red-500/40 p-8"><h3 class="text-red-400 text-2xl">Delta Squad</h3><p class="text-sm mt-4">Boss, Fixer, Scorch, Sev — 4-man sabotage team. Masters of infiltration.</p></div>
-            <div class="bg-black/70 border border-red-500/40 p-8"><h3 class="text-red-400 text-2xl">Clone Force 99 "Bad Batch"</h3><p class="text-sm mt-4">Hunter, Tech, Wrecker, Crosshair, Echo. Genetic mutants. Fought for the Rebellion after Order 66.</p></div>
+            
+            <!-- ARC Troopers -->
+            <div class="bg-black/70 border border-red-500/40 p-8 card-hover cursor-pointer" 
+                 onclick="showDetailModal('ARC Troopers','Elite Independent Operatives','images/arc.jpg','Advanced Recon Commandos. Fives, Echo, Colt and others. Removed inhibitor chips early. Discovered Palpatine\'s conspiracy. Operated without standard command structure. Survived Order 66 and many continued fighting for the Rebellion.')">
+                <img src="images/arc.jpg" class="w-full h-48 object-cover mb-6 rounded">
+                <h3 class="text-red-400 text-2xl">ARC Troopers</h3>
+                <p class="text-sm mt-4">Elite independent operatives like Fives and Echo. Removed inhibitor chips early and uncovered the conspiracy.</p>
+            </div>
+            
+            <!-- Delta Squad -->
+            <div class="bg-black/70 border border-red-500/40 p-8 card-hover cursor-pointer" 
+                 onclick="showDetailModal('Delta Squad','Republic Commando Team','images/delta.jpg','4-man sabotage and infiltration unit: Boss, Fixer, Scorch, Sev. Masters of stealth and high-risk missions. Served throughout the Clone Wars and many continued under the Empire.')">
+                <img src="images/delta.jpg" class="w-full h-48 object-cover mb-6 rounded">
+                <h3 class="text-red-400 text-2xl">Delta Squad</h3>
+                <p class="text-sm mt-4">Boss, Fixer, Scorch, Sev — 4-man sabotage and infiltration team. Masters of stealth operations.</p>
+            </div>
+            
+            <!-- Omega Squad -->
+            <div class="bg-black/70 border border-red-500/40 p-8 card-hover cursor-pointer" 
+                 onclick="showDetailModal('Omega Squad','Republic Commando Team','images/omega.jpg','4-man commando unit: Niner, Darman, Fi, Atin. Specialized in high-risk missions. Darman and Fi later defected. Niner and Atin continued service after the war.')">
+                <img src="images/omega.jpg" class="w-full h-48 object-cover mb-6 rounded">
+                <h3 class="text-red-400 text-2xl">Omega Squad</h3>
+                <p class="text-sm mt-4">Niner, Darman, Fi, Atin — 4-man infiltration and sabotage team. Darman and Fi later defected.</p>
+            </div>
+            
+            <!-- Clone Force 99 "Bad Batch" -->
+            <div class="bg-black/70 border border-red-500/40 p-8 card-hover cursor-pointer" 
+                 onclick="showDetailModal('Clone Force 99 \"Bad Batch\"','Experimental Unit','images/bad-batch.jpg','Hunter, Tech, Wrecker, Crosshair, Echo. Genetic mutations. Removed chips early. Fought for the Rebellion after Order 66.')">
+                <img src="images/bad-batch.jpg" class="w-full h-48 object-cover mb-6 rounded">
+                <h3 class="text-red-400 text-2xl">Clone Force 99 "Bad Batch"</h3>
+                <p class="text-sm mt-4">Hunter, Tech, Wrecker, Crosshair, Echo. Genetic mutants. Removed chips and fought for the Rebellion.</p>
+            </div>
+            
         </div>
     </div>
 </div>
@@ -250,3 +280,4 @@
 </script>
 </body>
 </html>
+
