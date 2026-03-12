@@ -35,10 +35,11 @@
             <a onclick="navigateTo(2)" class="nav-link cursor-pointer">CLONE GROUPS</a>
             <a onclick="navigateTo(3)" class="nav-link cursor-pointer">GROUND VEHICLES</a>
             <a onclick="navigateTo(4)" class="nav-link cursor-pointer">STARSHIPS</a>
-            <a onclick="navigateTo(5)" class="nav-link cursor-pointer">SPECIAL FORCES</a>
-            <a onclick="navigateTo(6)" class="nav-link cursor-pointer">NOTABLE CLONES</a>
-            <a onclick="navigateTo(7)" class="nav-link cursor-pointer">GOVERNMENT</a>
-            <a onclick="navigateTo(8)" class="nav-link cursor-pointer">BATTLES</a>
+            <a onclick="navigateTo(9)" class="nav-link cursor-pointer">SPECIALISED INFANTRY</a>
+            <a onclick="navigateTo(6)" class="nav-link cursor-pointer">SPECIAL FORCES</a>
+            <a onclick="navigateTo(7)" class="nav-link cursor-pointer">NOTABLE CLONES</a>
+            <a onclick="navigateTo(8)" class="nav-link cursor-pointer">GOVERNMENT</a>
+            <a onclick="navigateTo(9)" class="nav-link cursor-pointer">BATTLES</a>
         </div>
         <button onclick="toggleMobileMenu()" class="md:hidden text-3xl text-amber-400"><i class="fa-solid fa-bars"></i></button>
     </div>
@@ -50,10 +51,11 @@
     <button onclick="navigateTo(2);toggleMobileMenu()" class="hover:text-amber-400">CLONE GROUPS</button>
     <button onclick="navigateTo(3);toggleMobileMenu()" class="hover:text-amber-400">GROUND VEHICLES</button>
     <button onclick="navigateTo(4);toggleMobileMenu()" class="hover:text-amber-400">STARSHIPS</button>
-    <button onclick="navigateTo(5);toggleMobileMenu()" class="hover:text-amber-400">SPECIAL FORCES</button>
-    <button onclick="navigateTo(6);toggleMobileMenu()" class="hover:text-amber-400">NOTABLE CLONES</button>
-    <button onclick="navigateTo(7);toggleMobileMenu()" class="hover:text-amber-400">GOVERNMENT</button>
-    <button onclick="navigateTo(8);toggleMobileMenu()" class="hover:text-amber-400">BATTLES</button>
+    <button onclick="navigateTo(9);toggleMobileMenu()" class="hover:text-amber-400">SPECIALISED INFANTRY</button>
+    <button onclick="navigateTo(6);toggleMobileMenu()" class="hover:text-amber-400">SPECIAL FORCES</button>
+    <button onclick="navigateTo(7);toggleMobileMenu()" class="hover:text-amber-400">NOTABLE CLONES</button>
+    <button onclick="navigateTo(8);toggleMobileMenu()" class="hover:text-amber-400">GOVERNMENT</button>
+    <button onclick="navigateTo(9);toggleMobileMenu()" class="hover:text-amber-400">BATTLES</button>
     <button onclick="toggleMobileMenu()" class="mt-12 text-amber-400">CLOSE MENU</button>
 </div>
 
@@ -150,8 +152,51 @@
     </div>
 </div>
 
-<!-- PAGE 5: SPECIAL FORCES (now with images + Omega Squad added) -->
-<div id="page-5" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/arc.jpg')">
+    <!-- PAGE 5: SPECIALISED INFANTRY -->
+<div id="page-5" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/specialised-infantry.jpg')">
+    <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
+        <div class="text-center mb-16">
+            <span class="px-8 py-3 bg-purple-500/10 text-purple-400 text-xs font-bold tracking-widest">SECTION 5</span>
+            <h2 class="section-header text-6xl font-black mt-6 text-white">SPECIALISED INFANTRY</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Airborne -->
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Airborne Clone Troopers','Paratrooper / Jetpack Assault','images/airborne.jpg','Elite drop troops trained for high-altitude insertions. Used jetpacks or parachutes to strike behind enemy lines. Fought in major battles like Geonosis and Mygeeto. Not full Special Forces but far above standard infantry.')">
+                <img src="images/airborne.jpg" class="w-full h-48 object-cover mb-6"><h4 class="font-bold">Airborne Clone Troopers</h4>
+            </div>
+            
+            <!-- Clone Pilots -->
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Clone Pilots','Starfighter & Gunship Pilots','images/pilots.jpg','Highly trained pilots for V-19s, ARC-170s, Y-wings and LAAT gunships. Many flew under Jedi generals. Elite skill level but still regular army structure. Key to every space and ground battle.')">
+                <img src="images/pilots.jpg" class="w-full h-48 object-cover mb-6"><h4 class="font-bold">Clone Pilots</h4>
+            </div>
+            
+            <!-- Flame Troopers -->
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Flame Troopers','Incinerator Specialists','images/flame.jpg','Heavy infantry armed with flamethrowers. Used to clear bunkers and trenches. Distinctive red armour and tanks. Extremely effective in close-quarters urban fighting.')">
+                <img src="images/flame.jpg" class="w-full h-48 object-cover mb-6"><h4 class="font-bold">Flame Troopers</h4>
+            </div>
+            
+            <!-- Jet Troopers -->
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Jet Troopers','Advanced Jetpack Assault','images/jet.jpg','Fast-moving assault troopers with personal jetpacks. Used for rapid flanking and vertical strikes. More mobile than standard Airborne units. Deployed in the final years of the war.')">
+                <img src="images/jet.jpg" class="w-full h-48 object-cover mb-6"><h4 class="font-bold">Jet Troopers</h4>
+            </div>
+            
+            <!-- Scout Troopers -->
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Scout Troopers','Reconnaissance Specialists','images/scout.jpg','Lightly armoured recon troops on BARC speeders or on foot. Provided intelligence and forward observation. Often worked with ARF troopers but remained standard army.')">
+                <img src="images/scout.jpg" class="w-full h-48 object-cover mb-6"><h4 class="font-bold">Scout Troopers</h4>
+            </div>
+            
+            <!-- Heavy Troopers -->
+            <div class="bg-zinc-900 p-8 card-hover cursor-pointer" onclick="showDetailModal('Heavy Troopers','Heavy Weapons Specialists','images/heavy.jpg','Carried Z-6 rotary cannons and other heavy weapons. Provided suppressive fire for infantry advances. Elite within their companies but not Special Forces.')">
+                <img src="images/heavy.jpg" class="w-full h-48 object-cover mb-6"><h4 class="font-bold">Heavy Troopers</h4>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 6: SPECIAL FORCES (now with images + Omega Squad added) -->
+<div id="page-6" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/arc.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32 pb-20">
         <h2 class="section-header text-6xl font-black text-center mb-16 text-white">SPECIAL FORCES</h2>
         <div class="grid md:grid-cols-3 gap-8">
@@ -192,24 +237,24 @@
     </div>
 </div>
 
-<!-- PAGE 6: NOTABLE CLONES (12 fully coded in JS grid) -->
-<div id="page-6" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/rex.jpg')">
+<!-- PAGE 7: NOTABLE CLONES (12 fully coded in JS grid) -->
+<div id="page-7" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/rex.jpg')">
     <div class="max-w-7xl mx-auto px-8 pt-32">
         <h2 class="section-header text-6xl font-black text-center mb-16">NOTABLE CLONES</h2>
         <div class="grid md:grid-cols-3 gap-8" id="clones-grid"></div>
     </div>
 </div>
 
-<!-- PAGE 7: GOVERNMENT -->
-<div id="page-7" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/senate.jpg')">
+<!-- PAGE 8: GOVERNMENT -->
+<div id="page-8" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/senate.jpg')">
     <div class="max-w-4xl mx-auto px-8 pt-32 text-center">
         <h2 class="section-header text-6xl font-black">GALACTIC REPUBLIC GOVERNMENT</h2>
         <div class="mt-12 max-w-prose mx-auto text-lg text-slate-300">Supreme Chancellor Sheev Palpatine held emergency powers. Jedi served as generals. Secretly controlled by Darth Sidious — the betrayal that activated Order 66 and ended the Republic.</div>
     </div>
 </div>
 
-<!-- PAGE 8: BATTLES (now with all the ones you asked for) -->
-<div id="page-8" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/geonosis.jpg')">
+<!-- PAGE 9: BATTLES (now with all the ones you asked for) -->
+<div id="page-9" class="page hidden" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/geonosis.jpg')">
     <div class="max-w-6xl mx-auto px-8 pt-32">
         <h2 class="section-header text-6xl font-black text-center mb-16">NOTABLE BATTLES</h2>
         <div class="space-y-12">
@@ -334,6 +379,7 @@
 </script>
 </body>
 </html>
+
 
 
 
